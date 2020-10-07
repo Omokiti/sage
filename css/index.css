@@ -6,7 +6,9 @@
 html, body {
   font-family: 'Montserrat', sans-serif;
   width: 100%;
+  height: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .bg-img {
@@ -24,8 +26,8 @@ html, body {
 
 .navbar-toggler {
   background: #f4f4f4;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
 }
 
 .navbar-toggler span {
@@ -69,10 +71,6 @@ html, body {
           flex: 50%;
 }
 
-.boutus {
-  position: relative;
-}
-
 #transparentbox {
   position: absolute;
   bottom: 5px;
@@ -103,7 +101,7 @@ html, body {
 
 .infos {
   color: #f4f4f4;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .card {
@@ -112,15 +110,15 @@ html, body {
 
 .button, #btns {
   background: #7d4b8a;
-  width: 170px;
-  height: 45px;
+  width: 10.625rem;
+  height: 2.8125rem;
   color: #fedae8;
   border: none;
 }
 
 #btns {
-  margin-left: 100px;
-  width: 300px;
+  margin-left: 6.25rem;
+  width: 18.75rem;
 }
 
 .about {
@@ -128,36 +126,31 @@ html, body {
 }
 
 #icons {
-  width: 30px;
-  height: 30px;
-  margin: 20px 120px;
+  width: 1.875rem;
+  height: 1.875rem;
+  margin: 1.25rem 7.5rem;
   color: #7d4b8a;
 }
 
 .contents {
   background: #292929;
   color: #f4f4f4;
-  width: 400px;
-  left: 20px;
-  line-height: 20px;
-  position: absolute;
-  z-index: 2;
 }
 
 .imgs {
   background-image: url("../images/customer care.png");
   background-position: center;
   background-size: cover;
-  height: 400px;
+  height: 25rem;
 }
 
 .requestform {
-  margin: 20px 20px;
+  margin: 1.25rem 1.25rem;
 }
 
 .requestform input {
   width: 100%;
-  height: 50px;
+  height: 3.125rem;
   border: 2px solid #f4f4f4;
   background: #ececec;
 }
@@ -170,26 +163,26 @@ html, body {
 
 .customer {
   background: #6D4079;
-  width: 300px;
-  height: 80px;
+  width: 18.75rem;
+  height: 5rem;
 }
 
 #customer {
   position: absolute;
-  left: 15px;
+  left: 0.9375rem;
 }
 
 .profile {
   background: #8C579A;
-  width: 300px;
-  height: 300px;
-  padding: 5px;
-  line-height: 22px;
+  width: 18.75rem;
+  height: 18.75rem;
+  padding: 0.3125rem;
+  line-height: 1.375rem;
 }
 
 .bckg {
   background: #252525;
-  height: 40px;
+  height: 2.5rem;
 }
 
 footer {
@@ -199,7 +192,7 @@ footer {
 }
 
 #links {
-  margin-left: 90px;
+  margin-left: 5.625rem;
 }
 
 #link {
@@ -208,5 +201,28 @@ footer {
 
 li {
   list-style: none;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 60%;
+    margin: 0 auto;
+  }
+  html {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .about {
+    height: auto;
+  }
+  #btnsn {
+    margin-left: 3.125rem;
+    width: 9.375rem;
+    height: 2.5rem;
+  }
+  .button, #btns {
+    width: 9.375rem;
+    height: 2.5rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */
